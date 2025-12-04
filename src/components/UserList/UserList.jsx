@@ -1,7 +1,9 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
+
 const UserList = () => {
   const [name, setName] = useState("")
   const [users, setUsers] = useState([])
+
   return (
     <>
       <h1>Användarlista komponent</h1>
@@ -22,6 +24,15 @@ const UserList = () => {
         }}
       >
         Add User {name}
+      </button>
+      <button
+        onClick={() => {
+          const newArray = users.sort()
+          setUsers(newArray)
+          console.log(JSON.stringify(users))
+        }}
+      >
+        filter list
       </button>
       {users.length > 0 && users.map((item, i) => <p key={i}>{item}</p>)}
     </>
