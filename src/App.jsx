@@ -2,6 +2,7 @@ import UserList from './components/UserList/UserList';
 import TodoList from './components/TodoList/TodoList';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Calculator from './components/calculator/Calculator';
+import './App.css';
 
 function App() {
   return (
