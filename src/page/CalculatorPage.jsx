@@ -1,11 +1,11 @@
-import Calculator from "../component/calculator/Calculator";
+import Calculator from '../components/calculator/Calculator';
 
 const CalculatorPage = () => {
-    return(
-        <div>
-            <Calculator />
-        </div>
-    )
-}
+  return (
+    <div>
+      <Calculator />
+    </div>
+  );
+};
 
-export default CalculatorPage
+export default CalculatorPage;
