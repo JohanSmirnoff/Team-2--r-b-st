@@ -9,7 +9,7 @@ import TodoList from './TodoList/TodoList';
 import { useState } from 'react'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom"
-import Calculator from './component/calculator/Calculator'
+import Calculator from './components/calculator/Calculator'
 
 function App() {
   return (
